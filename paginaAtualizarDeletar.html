@@ -1,7 +1,8 @@
 <!DOCTYPE  HTML>
 <html lang="pt-br">
 
-<head>	<meta charset="utf-8">	
+<head>	
+	<meta charset="utf-8">	
 	<title>Atualizar e Deletar</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -44,28 +45,75 @@
 	  		</div>
 	  	</div>	
 	</nav>
-		<section>
+
+	<section>
+		<div class="container">
+			
+			<div class="row justify-content-center">
+				<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+					<div class="conteudo">
+						<h2>Atualizar</h2>
+						<form action="php/atualizar.php" method="POST">
+								
+								<input type="text" name="nomeTroca" placeholder="nome atual" required>
+								<br/><br/>
+								<input type="text" name="nomeNovo" placeholder="nome novo" required>
+								<br/><br/>
+
+								<input type="text" name="departamentoTroca" placeholder="departamento atual" required>
+								<br/><br/>
+								<input type="text" name="departamentoNovo" placeholder="departamento novo" required>
+								<br/><br/>
+
+								<input type="text" name="centroCustoTroca" placeholder="centro de custo atual" required>
+								<br/><br/>
+								<input type="text" name="centroCustoNovo" placeholder="centro de custo novo" required>
+								<br/><br/>
+								<button type="submit" class="btn btn-warning">Atualizar</button>
+							</form>
+					</div>
+				</div>
+
+				<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+					<div class="conteudo">
+						<h2>Deletar</h2>
+						<form action="php/deletar.php" method="POST">
+								<input type="text" name="nomeDel" placeholder="nome" required>
+								<br/><br/>
+								<input type="text" name="departamentoDel" placeholder="departamento" required>
+								<br/><br/>
+								<input type="text" name="centroCustoDel" placeholder="centro de custo" required>
+								<br/><br/>
+								<button type="submit" class="btn btn-warning">Deletar</button>
+							</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+		<!-- <section>
 			<div class="container">
 				
-				<div class="row"><!--LINHA-->
+				<div class="row">
 					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
 						<div class="conteudo">
-							<h1>Atualizar</h1>
+							<h2>Atualizar</h2>
 							<form action="php/atualizar.php" method="POST">
 									
-									<input type="text" name="nomeTroca" placeholder="nome atual">
+									<input type="text" name="nomeTroca" placeholder="nome atual" required>
 									<br/><br/>
-									<input type="text" name="nomeNovo" placeholder="nome novo">
-									<br/><br/>
-
-									<input type="text" name="departamentoTroca" placeholder="departamento atual">
-									<br/><br/>
-									<input type="text" name="departamentoNovo" placeholder="departamento novo">
+									<input type="text" name="nomeNovo" placeholder="nome novo" required>
 									<br/><br/>
 
-									<input type="text" name="centroCustoTroca" placeholder="centro de custo atual">
+									<input type="text" name="departamentoTroca" placeholder="departamento atual" required>
 									<br/><br/>
-									<input type="text" name="centroCustoNovo" placeholder="centro de custo novo">
+									<input type="text" name="departamentoNovo" placeholder="departamento novo" required>
+									<br/><br/>
+
+									<input type="text" name="centroCustoTroca" placeholder="centro de custo atual" required>
+									<br/><br/>
+									<input type="text" name="centroCustoNovo" placeholder="centro de custo novo" required>
 									<br/><br/>
 									<button type="submit" class="btn btn-warning">Atualizar</button>
 								</form>
@@ -74,13 +122,13 @@
 
 					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
 						<div class="conteudo">
-							<h1>Deletar</h1>
+							<h2>Deletar</h2>
 							<form action="php/deletar.php" method="POST">
-									<input type="text" name="nomeDel" placeholder="nome">
+									<input type="text" name="nomeDel" placeholder="nome" required>
 									<br/><br/>
-									<input type="text" name="departamentoDel" placeholder="departamento">
+									<input type="text" name="departamentoDel" placeholder="departamento" required>
 									<br/><br/>
-									<input type="text" name="centroCustoDel" placeholder="centro de custo">
+									<input type="text" name="centroCustoDel" placeholder="centro de custo" required>
 									<br/><br/>
 									<button type="submit" class="btn btn-warning">Deletar</button>
 								</form>
@@ -88,6 +136,6 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 </body>
 </html> 

@@ -45,18 +45,19 @@
 	</nav>
 		<section>
 			<div class="container">
-				<div class="row">
-					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+				<div class="row justify-content-center">
+					<div  class="col-xs-8 col-sm-12 col-md-12 col-lg-8">
 						<div class="conteudo">
 							
 							<h2>Lista Geral</h2>
 							<form action="" method="POST">
-	  						<input type="text" name="Dep" placeholder="Departamento">
-	  						<input type="text" name="Cet" placeholder="Departamento">
+	  							<input type="text" name="Dep" placeholder="Departamento" required>
+	  							<input type="text" name="Cet" placeholder="centro de custo" required>
 	  						<br/><br/>
-	  						<input type="submit" name="submit" value="Pesquisar" class="btn btn-warning">
+	  							<input type="submit" name="submit" value="Pesquisar" class="btn btn-warning">
 	  						</form>
 	  						<br/>
+
 							<?php
 
 								require_once('php/db.class.php');
@@ -70,7 +71,7 @@
 									$sql="SELECT nomeUsu, nomeDep, valor FROM usuario,centrodecusto, departamento,cargo WHERE centrodecusto.idCentro=departamento.idCentro AND departamento.idDepartamento=cargo.idDepartamento AND cargo.idcargo=usuario.idCargo AND departamento.nomeDep='$pesquisaDep' AND centrodecusto.valor='$pesquisaCet' ";
 									
 									$res=mysqli_query($link,$sql);
-									echo "<table border=\"1\">";
+									echo "<table class='centro' border=\"1\">";
 	  								echo"<tr><th>Usuário</th> <th>Departamento</th> <th>Centro Custo</th></tr>";
 									while ($row = mysqli_fetch_array($res)){
 									 	echo "<tr>";

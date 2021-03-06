@@ -1,15 +1,21 @@
 body{
-	background:gray;
+	background:rgb(128, 128, 128);
 }
 #nav{
-	background-color: white;
+	background-color: rgb(255, 255, 255);
 }
 section{
-	margin-top: 40px;
-	margin-bottom: 40px; 
-	text-align: justify;
+	margin-top: 50px;
+	padding: 20px;	
+}
+.centro{
+	margin: 0px auto;
 }
 .conteudo{
-	background: white;
-	padding: 10px;
+	margin-bottom: 50px;
+	background-color: rgb(255, 255, 255);
+	padding: 20px;
+	border-radius: 20px;
+	text-align: center;
+	border:1px solid black;
 }

@@ -46,15 +46,17 @@
 	</nav>
 		<section>
 			<div class="container">
-				<div class="row">
-					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+				<div class="row justify-content-center">
+					<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
 						<div class="conteudo">
 							
 							<h2>Lista de departamento por centro de custo</h2>
 							<form action="" method="POST">
-	  						<input type="text" name="cet" placeholder="Centro de custo">
+	  						<input type="text" name="cet" placeholder="Centro de custo" required>
 	  						<input type="submit" name="submit" value="Pesquisar" class="btn btn-warning">
 	  						</form>
+							<br/>
+							
 							<?php
 
 								require_once('php/db.class.php');
@@ -67,7 +69,7 @@
 										WHERE centrodecusto.idCentro=departamento.idCentro AND centrodecusto.valor='$pesquisaCet')";
 									$res=mysqli_query($link,$sql);
 									//$row = mysqli_fetch_row($res);
-									echo "<table border=\"1\">";
+									echo "<table class='centro' border=\"1\">";
 	  								echo "<tr><th> Departamento </th></tr>";
 									while ($row = mysqli_fetch_array($res)){
 										echo "<tr>";
