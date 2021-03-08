@@ -4,10 +4,10 @@ O projeto desenvolvido, apresenta telas feitas em HTML e estilizadas com o uso d
 # Linguagens e Frameworks
 Para o desenvolvimento do projeto foi utilizado as seguintes linguagens e frameworks
 
--HTML 
--Css
--Php
--Bootstrap
+[-HTML]
+[-Css]
+[-Php]
+[-Bootstrap]
 
 # Informações para executar o projeto 
 

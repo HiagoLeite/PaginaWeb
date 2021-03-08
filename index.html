@@ -43,28 +43,29 @@
 	  		</div>
 	  	</div>	
 	</nav>
-		<section>
-			<div class="container">
-				
-				<div class="row"><!--LINHA-->
-					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"><!--LAYOUT RESPONSIVO-->
-						<div class="conteudo">
-							<h1>Criar Usuário</h1>
-								<form action="php/registra.php" method="POST">
-									<input type="text" name="nomeUsu" placeholder="nome">
-									<br/><br/>
-									<input type="text" name="nomeCar" placeholder="cargo">
-									<br/><br/>
-									<input type="text" name="nomeDep" placeholder="departamento">
-									<br/><br/>
-									<input type="text" name="nomeCet" placeholder="centro de custo">
-									<br/><br/>
-									<button type="submit" class="btn btn-warning">Cadastrar</button>
-								</form>
-						</div>
+
+	<section>
+		<div class="container" >
+			<div class="row justify-content-center">
+				<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">	
+					<div class="conteudo">
+						<h2>Criar Usuário</h2>
+						<form action="php/registra.php" method="POST">
+							<input type="text" name="nomeUsu" placeholder="nome" required>
+							<br/><br/>
+							<input type="text" name="nomeCar" placeholder="cargo" required>
+							<br/><br/>
+							<input type="text" name="nomeDep" placeholder="departamento" required>
+							<br/><br/>
+							<input type="text" name="nomeCet" placeholder="centro de custo" required>
+							<br/><br/>
+							<button type="submit" class="btn btn-warning">Cadastrar</button>
+						</form>
 					</div>
 				</div>
 			</div>
-		</section>
+		</div>
+	</section>
+		
 </body>
 </html> 

@@ -20,7 +20,6 @@
         if($idRes=mysqli_query($link,$sql)){
             $row = mysqli_fetch_row($idRes);
             $id=$row[0];
-            //while($id<$row){
             $id++;
 
             $sql1="INSERT INTO centroDeCusto VALUES('$id','$custo')";

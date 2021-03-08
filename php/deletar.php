@@ -20,7 +20,6 @@
 
             $row = mysqli_fetch_row($idRes);
             $id=$row[0];
-            //var_dump($id);
 
             $sql1="DELETE FROM centrodecusto WHERE centrodecusto.idCentro='$id'"; 
             $sql2="DELETE FROM departamento WHERE departamento.idDepartamento='$id'";
