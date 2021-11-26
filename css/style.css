@@ -6,15 +6,23 @@ body{
 }
 section{
 	margin-top: 50px;
-	padding: 20px;	
+	padding: 10px;	
 }
 .centro{
 	margin: 0px auto;
 }
 .conteudo{
-	margin-bottom: 50px;
+	margin: 10px;
 	background-color: rgb(255, 255, 255);
 	padding: 20px;
+	border-radius: 20px;
+	text-align: center;
+	border:1px solid black;
+}
+.contForm{
+	margin: 10px;
+	background-color: rgb(255, 255, 255);
+	padding: 5px;
 	border-radius: 20px;
 	text-align: center;
 	border:1px solid black;

@@ -1,5 +1,5 @@
 # Sobre
-O projeto desenvolvido, apresenta telas feitas em HTML e estilizadas com o uso do framework Bootstrap, cada tela conta com uma função especifica de criar,deletar,atualizar e apresentar os dados.
+O projeto desenvolvido, apresenta telas feitas em HTML e estilizadas com o uso do framework Bootstrap.
 
 # Linguagens e Frameworks
 Para o desenvolvimento do projeto foi utilizado as seguintes linguagens e frameworks

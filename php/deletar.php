@@ -25,11 +25,12 @@
             $sql2="DELETE FROM departamento WHERE departamento.idDepartamento='$id'";
             $sql3="DELETE FROM cargo WHERE cargo.idcargo='$id'";
             $sql4="DELETE FROM usuario WHERE usuario.idUsuario='$id'";
-            mysqli_query($link,$sql4);
-            mysqli_query($link,$sql3);
-            mysqli_query($link,$sql2);
-            mysqli_query($link,$sql1);
-            echo "Exclusão realizada";
+            
+            if(mysqli_query($link,$sql1) && mysqli_query($link,$sql2) && mysqli_query($link,$sql3) && mysqli_query($link,$sql4)){
+                header('Location: ../index.php');
+            }else{
+                echo "ERRO NA QUERY";
+            }            
         }else{
             echo "ERRO!";
         }

@@ -27,11 +27,11 @@
             $sql3="INSERT INTO cargo VALUES('$id','$cargo','$id')";
             $sql4="INSERT INTO usuario VALUES('$id','$usuario','$id')";
             //EXECUTA QUERYS
-            mysqli_query($link,$sql1);
-            mysqli_query($link,$sql2);
-            mysqli_query($link,$sql3);
-            mysqli_query($link,$sql4);
-            echo "Registrado";
+            if(mysqli_query($link,$sql1) && mysqli_query($link,$sql2) && mysqli_query($link,$sql3) && mysqli_query($link,$sql4)){
+                header('Location: ../index.php');
+            }else{
+                echo "ERRO NA QUERY";
+            }
         }else{
             echo "ERRO!";
         }
